@@ -1,0 +1,24 @@
+# requirements.txt
+
+# --- Core App ---
+ultralytics
+wandb
+typer[rich]
+pyyaml
+opencv-python-headless
+numpy
+onnxruntime
+tensorflow
+tqdm
+
+# --- Notebook & Analysis ---
+jupyter
+pandas
+seaborn
+matplotlib
+
+# --- CI/CD & Testing ---
+pytest
+pylint
+black
+isort
