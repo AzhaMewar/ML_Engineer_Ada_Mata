@@ -1,0 +1,40 @@
+# settings.yaml
+
+# --- Data Paths ---
+# IMPORTANT: You must download the dataset and put its path here
+dataset_path: "./dataset/raw-data"  # Path to the downloaded dataset
+processed_path: "./dataset/processed" # Output of the 'preprocess' command
+model_output_path: ./models/
+# This file will be CREATED by the preprocess script
+data_yaml: ./dataset/processed/data.yaml
+
+# --- Class & Color Mapping ---
+class_names:
+  0: light_blue
+  1: dark_blue
+  2: other
+class_map:
+  light_blue: 0
+  dark_blue: 1
+  other: 2
+
+# --- Preprocessing ---
+# These values MUST be tuned by you in the notebook
+hsv_thresholds:
+  light_blue_h: [75, 110] 
+  dark_blue_h: [90, 130]
+  min_saturation: 30
+  min_value: 70
+train_val_split: 0.7 # 80% train, 20% validation
+
+# --- Training Parameters ---
+model_name: yolov8n.pt  # The base model
+epochs: 50
+batch_size: 16
+learning_rate: 0.001
+img_size: 640
+
+# --- WandB ---
+wandb_project: "ada-mata-bsort"
+# Fill in your wandb username
+wandb_entity: "fazrah16mewar-123"
