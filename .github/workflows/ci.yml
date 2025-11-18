@@ -13,6 +13,7 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v4
 
+<<<<<<< HEAD
     # --- LANGKAH BARU UNTUK MEMBERSIHKAN DISK RUNNER ---
     - name: Free Disk Space (Ubuntu)
       run: |
@@ -24,6 +25,8 @@ jobs:
         echo "Disk space after cleanup:"
         df -h
 
+=======
+>>>>>>> cd0c4ed6c11e1ff5ffef14d12fe6479e8ef5185c
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v5
       with:
