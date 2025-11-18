@@ -11,7 +11,7 @@ Ini adalah submission saya untuk take-home test Machine Learning Engineer. Proye
 
 ## Hasil & Analisis Eksperimen (V1-V4)
 * **Training:** Model dilatih beberapa kali untuk mencoba mendeteksi tutup botol pada gambar tes `...b4_3.jpg`.
-* **Link WandB (Publik):** [https://wandb.ai/mewarfarzahrahmawati-universitas-bakrie/ada-mata-bsort](https://wandb.ai/mewarfarzahrahmawati-universitas-bakrie/ada-mata-bsort)
+* **Link WandB (Tidak bisa public karena harus subscribe):** [https://wandb.ai/mewarfarzahrahmawati-universitas-bakrie/ada-mata-bsort](https://wandb.ai/fazrah16mewar-123/ada-mata-bsort?nw=nwuserfazrah16mewar)
 * **Analisis Waktu Inferensi:**
     * Waktu inferensi pada mesin saya (Intel Core i5-8250U CPU) menggunakan **model ONNX** adalah **~84ms - 116ms**.
     * Ekspor TFLite gagal karena *bug* eksternal di *library* `onnx2tf` (error `ai_edge_litert`), sehingga model ONNX yang digunakan untuk *benchmark*.
